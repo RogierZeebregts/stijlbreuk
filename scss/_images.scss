@@ -1,6 +1,8 @@
 @use 'breakpoints';
 
 .image__phone {
+    display: block;
+    pointer-events: none;
     position: absolute;
     left: 50%;
     top: 50%;
