@@ -1,0 +1,37 @@
+@use 'typography';
+@use 'colors';
+
+html {
+    min-height: 100%;
+    font-family: typography.$base-font-family;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    color: colors.$body-color;
+    fill: colors.$body-color;
+    font-size: typography.$base-font-size;
+    font-weight: typography.$base-font-weight;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+:before,
+:after {
+    box-sizing: inherit;
+}
+
+svg {
+    box-sizing: initial !important;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}

@@ -1,0 +1,29 @@
+@use 'breakpoints';
+
+.flexbox {
+    display: flex;
+}
+
+.flexbox--large {
+    display: block;
+    width: 100%;
+
+    @media(min-width: breakpoints.$tablet) {
+        display: flex;
+    }
+}
+
+.flexbox__column {
+    width: 100%;
+
+    @media(min-width: breakpoints.$tablet) {
+        width: 50%;
+
+        &:nth-of-type(1) {
+            order: 2;
+        }
+        &:nth-of-type(2) {
+            order: 1;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+@use 'breakpoints';
+@use 'colors';
+
+.button-container {
+    margin-top: 4rem;
+}
+
+.button-container__column {
+    margin: 0 1rem;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.button {
+    background-color: colors.$body-color;
+    border: solid 2px transparent;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 1rem;
+    text-decoration: none;
+
+    svg {
+        fill: #fff;
+    }
+
+    @media(min-width: breakpoints.$mobile) {
+        padding: 2rem;
+    }
+
+    &.naked {
+        background-color: transparent;
+        color: colors.$body-color;
+
+        svg {
+            fill: colors.$body-color;
+        }
+    }
+
+    &.ghost {
+        border-color: colors.$border-color;
+        background-color: transparent;
+        color: colors.$body-color;
+
+        svg {
+            fill: colors.$body-color;
+        }
+    }
+
+    &:hover {
+        border-color: colors.$border-color;
+    }
+
+    &:focus {
+        border-color: colors.$body-color;
+    }
+}
+
+.button--has-icon {
+    display: inline-flex;
+    align-items: center;
+
+    svg {
+        max-width: 1.6rem;
+        margin-right: 1rem;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover {
+        svg {
+            transform: scale(1.6);
+        }
+    }
+}
+
+.button--has-icon--right {
+    svg {
+        margin-right: 0;
+        margin-left: 1rem;
+    }
+}
