@@ -9,6 +9,11 @@
     transform: translateY(-100%) translateX(-50%);
     height: 350px;
 
+    @media(min-width: breakpoints.$mobile) {
+        transform: translateY(-50%) translateX(-45%);
+        height: 480px;
+    }
+
     @media(min-width: breakpoints.$tablet) {
         transform: translateY(-50%) translateX(-55%) scale(0.8);
         height: 900px;

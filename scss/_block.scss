@@ -10,6 +10,10 @@ $block-inner-width: 1000px;
     width: 100%;
 
     @media(min-width: breakpoints.$mobile) {
+        padding: 6rem 4.5rem;
+    }
+
+    @media(min-width: breakpoints.$tablet) {
         padding: 8rem 10rem;
     }
 

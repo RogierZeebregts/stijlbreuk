@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;700;800&display=swap");
 h2, h3 {
   font-family: "Inconsolata", monospace;
   font-weight: 800;
@@ -109,6 +110,7 @@ h3 {
   height: 100vh;
   width: 100vw;
   padding-bottom: 2rem;
+  overflow: hidden;
 }
 @media (min-height: 880px) {
   .wrapper {
@@ -125,7 +127,7 @@ h3 {
   display: block;
   width: 100%;
 }
-@media (min-width: 74rem) {
+@media (min-width: 36rem) {
   .flexbox--large {
     display: flex;
   }
@@ -134,7 +136,7 @@ h3 {
 .flexbox__column {
   width: 100%;
 }
-@media (min-width: 74rem) {
+@media (min-width: 36rem) {
   .flexbox__column {
     width: 50%;
   }
@@ -152,6 +154,11 @@ h3 {
   width: 100%;
 }
 @media (min-width: 36rem) {
+  .block {
+    padding: 6rem 4.5rem;
+  }
+}
+@media (min-width: 74rem) {
   .block {
     padding: 8rem 10rem;
   }
@@ -196,7 +203,7 @@ h3 {
   border: solid 2px transparent;
   border-radius: 6px;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 800;
   padding: 1rem;
   text-decoration: none;
@@ -204,8 +211,9 @@ h3 {
 .button svg {
   fill: #fff;
 }
-@media (min-width: 36rem) {
+@media (min-width: 74rem) {
   .button {
+    font-size: 1.8rem;
     padding: 2rem;
   }
 }
@@ -257,6 +265,12 @@ h3 {
   top: 50%;
   transform: translateY(-100%) translateX(-50%);
   height: 350px;
+}
+@media (min-width: 36rem) {
+  .image__phone {
+    transform: translateY(-50%) translateX(-45%);
+    height: 480px;
+  }
 }
 @media (min-width: 74rem) {
   .image__phone {
