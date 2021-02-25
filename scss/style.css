@@ -16,13 +16,13 @@ h3 {
 
 @media (min-width: 74rem) {
   h2 {
-    font-size: 4.9rem;
-    line-height: 4.9rem;
+    font-size: 4.3rem;
+    line-height: 4.3rem;
   }
 
   h3 {
-    font-size: 4.3rem;
-    line-height: 4.3rem;
+    font-size: 3.9rem;
+    line-height: 3.9rem;
   }
 }
 .title {
@@ -85,13 +85,13 @@ h3 {
 
 @media (min-width: 74rem) {
   h2 {
-    font-size: 4.9rem;
-    line-height: 4.9rem;
+    font-size: 4.3rem;
+    line-height: 4.3rem;
   }
 
   h3 {
-    font-size: 4.3rem;
-    line-height: 4.3rem;
+    font-size: 3.9rem;
+    line-height: 3.9rem;
   }
 }
 .title {
